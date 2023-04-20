@@ -1,0 +1,156 @@
+:root{
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.84rem, 3.75rem);
+--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.16rem, 5rem);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "font-family: mencken-std, sans-serif";
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  font-size: var(--font-size-base);
+}
+
+i {
+  font-family: ;
+}
+
+h2, h3, .raiting {
+  color: #001D76;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1{
+  color: #001D76;
+  font-family: "jeanne-moderno", serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+button {
+  color: #FFF;
+  background-color: #001D76;
+  font-family: "mencken-std", sans-serif;
+  font-size: small;
+  padding: .5rem 4rem;
+  border-width: 0;
+}
+
+header, footer {
+  color: #FFF;
+  background-color: #98A5D3;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;;
+  color: #001D76;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #001D76;
+}
+
+.hero {
+  width: 100vw;
+  height: 20vh;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  background-image: url(assets/pinkshirtgirl.jpg);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 250px;
+  margin: 1rem auto 1rem auto;
+}
+
+.main-flex div, .product-info {
+  text-align: center;
+}
+
+#bottle {
+  max-width: 250px;
+}
+
+#girl {
+  max-width: 190px;
+}
+
+#square {
+  max-width: 200px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 350px;
+  margin: 1rem auto 1rem auto;
+  gap: 1rem;
+  
+}
+
+.product-info {
+  max-width: 350px;
+  margin: 0 auto 1rem auto;
+}
+
+.product-grid img{
+  width: 100%;
+}
+
+.about {
+  max-width: 350px;
+  margin: 0 auto 1rem auto;
+}
+
+#big-grid {
+  grid-area: 1 / 1 / span 2 / span 3;
+}
+
+.about div{
+  margin: 0 auto;
+  max-width: 85vw;
+}
+
+.about img {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+footer{
+  padding: .5rem;
+}
